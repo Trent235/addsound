@@ -1,0 +1,50 @@
+<!DOCTYPE html>         <!--Document type-->
+<html lang="en">        <!--Language-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!--setting for page format-->
+    <title>User Registration and Login</title>          <!--typed heading -->
+    <link rel="stylesheet" href="styles.css">           <!-- Link to your CSS file if you have one -->
+</head>
+<body>
+    <h2>Register</h2>           <!--typed heading -->
+    <form id="registrationForm">                                
+        <label for="firstName">First Name:</label>                      <!--label call to action visual for the user-->
+        <input type="text" id="firstName" name="firstName" required>    
+        <br>
+        <label for="lastName">Last Name:</label>                        <!--label call to action visual for the user-->
+        <input type="text" id="lastName" name="lastName" required>
+        <br>
+        <label for="zipCode">ZIP Code:</label>                          <!--label call to action visual for the user-->
+        <input type="text" id="zipCode" name="zipCode" required pattern="\d{5}">
+        <br>
+        <label for="email">Email:</label>                               <!--label call to action visual for the user-->
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>                         <!--label call to action visual for the user-->
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Register</button>                         <!--Button call to action visual for the user-->
+    </form>
+
+    <h2>Login</h2>
+    <form id="loginForm">                   <!--typed heading -->
+        <label for="loginEmail">Email:</label>                          <!--label call to action visual for the user-->
+        <input type="email" id="loginEmail" name="loginEmail" required>
+        <br>
+        <label for="loginPassword">Password:</label>                     <!--label call to action visual for the user-->
+        <input type="password" id="loginPassword" name="loginPassword" required>
+        <br>
+        <button type="submit">Login</button>                            <!--Button call to action visual for the user-->
+    </form> 
+
+    <div id="hiddenMessage">
+        <audio id="loginSound" src="c:\Users\trini\OneDrive\Desktop\User input validation\us-lab-background-1.mp3"></audio>
+        <p>Welcome back! You've successfully logged in.</p>          <!--Message displayed to the user-->
+        <p>Scroll Down!</p>                                             <!--Instructions to Scroll down to view image-->
+        <img src="c:\Users\trini\OneDrive\Desktop\User input validation\Logo-01.png" alt="Welcome Image"> 
+    </div>
+
+    <script src="script.js"></script>               <!--link to jscript functions-->
+</body>
+</html>
